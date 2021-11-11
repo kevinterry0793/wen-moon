@@ -1,0 +1,122 @@
+/* Roadmap */
+#roadmap {
+  padding: 30px 0 130px;
+}
+#roadmap .illustration-box {
+  background: #f79139;
+  border-radius: 0 400px 400px 0;
+  position: relative;
+}
+#roadmap .illustration-box img:last-of-type {
+  position: absolute;
+  width: 84%;
+  top: 50%;
+  left: 100px;
+  transform: translateY(-50%);
+}
+#roadmap .section-title {
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+  margin: 0px;
+  padding-top: 40px;
+  text-transform: uppercase;
+}
+#roadmap .timeline {
+  position: relative;
+  top: 50px;
+  position: relative;
+}
+#roadmap .timeline .milestone:nth-child(odd) {
+  border-left: 1px solid #fda32b;
+}
+#roadmap .timeline .milestone:nth-child(even) {
+  border-right: 1px solid #fda32b;
+  position: relative;
+  left: 0.6px;
+}
+#roadmap .timeline .milestone {
+  position: relative;
+  padding-left: 20px;
+}
+#roadmap .timeline .milestone .icon {
+  position: absolute;
+  left: -10px;
+  top: 0;
+  background: #fda32b;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 18px;
+  font-size: 10px;
+  color: #fff;
+  border: 1px solid #fda32b;
+}
+#roadmap .timeline .milestone .icon.upcoming {
+  background: #fff;
+  color: #fff;
+}
+#roadmap .timeline .milestone h4 {
+  margin: 0;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+#roadmap .timeline .milestone:nth-child(even) .icon {
+  left: auto;
+  right: -10px;
+}
+#roadmap .timeline .milestone ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-bottom: 30px;
+  line-height: 40px;
+}
+#roadmap .timeline .milestone ul li {
+  font-size: 15px;
+  color: #fff;
+}
+#roadmap .timeline .milestone ul li strong {
+  color: #fff;
+  font-weight: normal;
+}
+
+@media (max-width: 768px) {
+  #roadmap .illustration-box {
+    overflow: hidden;
+  }
+  #roadmap .illustration-box img:first-of-type {
+    width: 100%;
+  }
+  #roadmap .illustration-box img:last-of-type {
+    width: 100%;
+  }
+  #how-to-buy .container .buy-steps .step p {
+    word-break: break-all;
+  }
+  #roadmap .row {
+    margin: 0;
+  }
+  #roadmap .timeline {
+    padding: 0 20px;
+  }
+  #roadmap .timeline .milestone:nth-child(even) {
+    border-left: 1px solid #fda32b;
+    border-right: none;
+    left: 0;
+    text-align: left;
+  }
+  #roadmap .timeline .milestone:nth-child(even) .icon {
+    left: -10px;
+    right: auto;
+  }
+  .row {
+    display: -ms-flexbox;
+    display: inline-block;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+}
